@@ -23,7 +23,7 @@
 // }
 
 // oneliner
-const arrayPlusArray = (arr1, arr2) =>  [...arr1, ...arr2].reduce((sum, cur) => sum + cur)
+const arrayPlusArray = (...arrays) =>  [].concat(...arrays).reduce((sum, cur) => sum + cur)
 
 
 console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]));
