@@ -6,6 +6,7 @@
 // one step for coding, one leap for logic 
 function accum(s) {
   return [...s].map((acc,curr)=> acc.toUpperCase()+acc.repeat(curr).toLowerCase()).join('-')
+    // return s.split('').map((acc,curr)=> acc.toUpperCase()+acc.repeat(curr).toLowerCase()).join('-')
 } 
 
 
